@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SimpleSubstitution</string>
+
+    <string name="title_create_team">Create A Team</string>
+    <string name="title_edit_team">Edit Team</string>
+    <string name="title_view_team">Teams</string>
+    <string name="title_team_detail">Team View</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_create_team">Create Team</string>
+    <string name="action_save_team">Save Team Details</string>
+
+    <string name="label_create_team">Creating Team&#8230;</string>
+    <string name="label_update_team">Updating Team&#8230;</string>
+    <string name="label_create_player">Creating Player&#8230;</string>
+
+    <string name="hint_enter_team_name">Enter Team Name</string>
+    <string name="message_team_created">Team successfully created</string>
+    <string name="message_team_updated">Team successfully updated</string>
+    <string name="message_player_created">Player successfully created</string>
+    <string name="message_create_player">Now create some players and add to your team</string>
+    <string name="title_create_player">Create a Player</string>
+    <string name="hint_enter_player_name">Enter Player Name</string>
+</resources>

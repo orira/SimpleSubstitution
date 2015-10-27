@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gradient_protection_black">#b3000000</color>
+    <color name="gradient_protection_white">#90ffffff</color>
+
+    <color name="primary_colour">#3F51B5</color>
+    <color name="primary_colour_dark">#303F9F</color>
+    <color name="accent">#C5CAE9</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

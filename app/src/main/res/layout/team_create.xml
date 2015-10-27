@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/container_create_team_input_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_view_create_team_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/placeholder_team"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:paddingStart="@dimen/padding_standard"
+            android:paddingEnd="@dimen/padding_standard"
+            android:layout_below="@id/image_view_create_team_placeholder">
+            <EditText
+                android:id="@+id/edit_text_create_team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_team_name" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_create_team_creating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@android:color/white">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_create_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/label_create_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_create_team"
+            android:gravity="center_horizontal"
+            android:layout_above="@id/progress_bar_create_team"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_view_team_created"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_complete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_create_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/message_create_player" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_action_button_create_player"
+            android:transitionName="team_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/padding_standard"
+            android:layout_marginBottom="@dimen/padding_standard"
+            android:src="@mipmap/ic_add" />
+    </RelativeLayout>
+
+</RelativeLayout>
